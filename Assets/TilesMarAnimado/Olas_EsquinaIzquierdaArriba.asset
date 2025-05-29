@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
-  m_Name: OleajeTile
+  m_Name: Olas_EsquinaIzquierdaArriba
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: -1898488639, guid: abb1ec459fbf4794796904fad101e859, type: 3}
-  - {fileID: 1716211984, guid: abb1ec459fbf4794796904fad101e859, type: 3}
-  - {fileID: 838547624, guid: abb1ec459fbf4794796904fad101e859, type: 3}
-  - {fileID: -140875810, guid: abb1ec459fbf4794796904fad101e859, type: 3}
+  - {fileID: 3667465145054562515, guid: 4a0722d95e2200248b8fbde30f49ec1d, type: 3}
+  - {fileID: -128957205, guid: 4a0722d95e2200248b8fbde30f49ec1d, type: 3}
+  - {fileID: -2130375702, guid: 4a0722d95e2200248b8fbde30f49ec1d, type: 3}
+  - {fileID: 875088772, guid: 4a0722d95e2200248b8fbde30f49ec1d, type: 3}
   m_MinSpeed: 3
   m_MaxSpeed: 3
   m_AnimationStartTime: 0
