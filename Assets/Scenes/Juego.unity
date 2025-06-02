@@ -13959,7 +13959,6 @@ GameObject:
   - component: {fileID: 2099767424}
   - component: {fileID: 2099767427}
   - component: {fileID: 2099767428}
-  - component: {fileID: 2099767430}
   - component: {fileID: 2099767431}
   m_Layer: 0
   m_Name: Jugador
@@ -14080,21 +14079,6 @@ MonoBehaviour:
   velocidad: 5
   torque: 300
   velocidadAngularMax: 50
---- !u!114 &2099767430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2099767423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1017c6cc99eeaf544ba76ec386502693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Jugador: {fileID: 0}
-  offset: {x: 0, y: 0, z: -10}
-  suavizado: 10
 --- !u!70 &2099767431
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
