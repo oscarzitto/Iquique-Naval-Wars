@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Esquina3
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 245043210, guid: cc2d4962b0b22a94fa86b2acf744a384, type: 3}
+  - {fileID: -344488379798358921, guid: cc2d4962b0b22a94fa86b2acf744a384, type: 3}
+  - {fileID: 7493115365380551780, guid: cc2d4962b0b22a94fa86b2acf744a384, type: 3}
+  - {fileID: -8570826030554765341, guid: cc2d4962b0b22a94fa86b2acf744a384, type: 3}
+  m_MinSpeed: 3
+  m_MaxSpeed: 3
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 1
+  m_TileAnimationFlags: 0

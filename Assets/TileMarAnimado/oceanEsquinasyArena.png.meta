@@ -1,0 +1,655 @@
+fileFormatVersion: 2
+guid: cc2d4962b0b22a94fa86b2acf744a384
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1686293933687108305
+    second: oceanEsquinasyArena_0
+  - first:
+      213: -6494168610039850731
+    second: oceanEsquinasyArena_1
+  - first:
+      213: -5693431483234491179
+    second: oceanEsquinasyArena_2
+  - first:
+      213: -7555303265940287679
+    second: oceanEsquinasyArena_3
+  - first:
+      213: -117733698878082690
+    second: oceanEsquinasyArena_4
+  - first:
+      213: -4830993416157027854
+    second: oceanEsquinasyArena_5
+  - first:
+      213: -7722117444410939599
+    second: oceanEsquinasyArena_6
+  - first:
+      213: 5273480689864279893
+    second: oceanEsquinasyArena_7
+  - first:
+      213: -2496509200899759345
+    second: oceanEsquinasyArena_8
+  - first:
+      213: 2926518926563914003
+    second: oceanEsquinasyArena_9
+  - first:
+      213: -344488379798358921
+    second: oceanEsquinasyArena_10
+  - first:
+      213: 7493115365380551780
+    second: oceanEsquinasyArena_11
+  - first:
+      213: -8570826030554765341
+    second: oceanEsquinasyArena_12
+  - first:
+      213: 895193136896849827
+    second: oceanEsquinasyArena_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 111
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d0fa70a941998e0800000000000000
+      internalID: -1686293933687108305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 111
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51915178e0410e5a0800000000000000
+      internalID: -6494168610039850731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 111
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d468c82b3edcf0b0800000000000000
+      internalID: -5693431483234491179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_3
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 47
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14fc74795bb262790800000000000000
+      internalID: -7555303265940287679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_4
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 111
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71774c13d9bd5ef0800000000000000
+      internalID: -117733698878082690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_5
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 111
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f1a5bd651dd4fcb0800000000000000
+      internalID: -4830993416157027854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_6
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 111
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 137e90c091785d490800000000000000
+      internalID: -7722117444410939599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 47
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5570e315fba2f2940800000000000000
+      internalID: 5273480689864279893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_8
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 47
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0320eddb1e9a5dd0800000000000000
+      internalID: -2496509200899759345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_9
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 47
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311bc4655751d9820800000000000000
+      internalID: 2926518926563914003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_10
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 47
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7747edcc4a1283bf0800000000000000
+      internalID: -344488379798358921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_11
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 47
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 464778e79b4ecf760800000000000000
+      internalID: 7493115365380551780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_12
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 47
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7ac19a22f4e0980800000000000000
+      internalID: -8570826030554765341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_13
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 79
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a7ba124a6d5c6c00800000000000000
+      internalID: 895193136896849827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_14
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 79
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5031a34992af0a9489b195fc7ac521a8
+      internalID: -1889918793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_15
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 47
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21563f0acfe60d545b388a3452c945dd
+      internalID: 245043210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_16
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 111
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9cbc48e8ace8d429905b67bbf05386
+      internalID: -1937525455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_17
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 111
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae1a3ad50bafae4496dc93ada05a47d
+      internalID: 2022189876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_18
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 79
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5be1831f8ae3e946b0c02c8ad23cf2c
+      internalID: -1637632935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_19
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 79
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c372cbc786d67548988151eb6dcc2e3
+      internalID: 1766894517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanEsquinasyArena_20
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 79
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1707807dde3b5e84883adb0dd5d1483e
+      internalID: -1682537627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 56c3e986bb8420843b26b9e65fd3b8ac
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      oceanEsquinasyArena_0: -1686293933687108305
+      oceanEsquinasyArena_1: -6494168610039850731
+      oceanEsquinasyArena_10: -344488379798358921
+      oceanEsquinasyArena_11: 7493115365380551780
+      oceanEsquinasyArena_12: -8570826030554765341
+      oceanEsquinasyArena_13: 895193136896849827
+      oceanEsquinasyArena_14: -1889918793
+      oceanEsquinasyArena_15: 245043210
+      oceanEsquinasyArena_16: -1937525455
+      oceanEsquinasyArena_17: 2022189876
+      oceanEsquinasyArena_18: -1637632935
+      oceanEsquinasyArena_19: 1766894517
+      oceanEsquinasyArena_2: -5693431483234491179
+      oceanEsquinasyArena_20: -1682537627
+      oceanEsquinasyArena_3: -7555303265940287679
+      oceanEsquinasyArena_4: -117733698878082690
+      oceanEsquinasyArena_5: -4830993416157027854
+      oceanEsquinasyArena_6: -7722117444410939599
+      oceanEsquinasyArena_7: 5273480689864279893
+      oceanEsquinasyArena_8: -2496509200899759345
+      oceanEsquinasyArena_9: 2926518926563914003
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

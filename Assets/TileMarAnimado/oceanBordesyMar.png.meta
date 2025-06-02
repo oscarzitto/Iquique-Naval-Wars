@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: 27b8c43a63792df41bb38afdbf016e8c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9019065874729942843
+    second: oceanBordesyMar_0
+  - first:
+      213: -6734088812741308068
+    second: oceanBordesyMar_1
+  - first:
+      213: 7644043402608299550
+    second: oceanBordesyMar_2
+  - first:
+      213: 5711094330285719476
+    second: oceanBordesyMar_3
+  - first:
+      213: 1860857292029700773
+    second: oceanBordesyMar_4
+  - first:
+      213: -3285650883391092844
+    second: oceanBordesyMar_5
+  - first:
+      213: 4588041777360368796
+    second: oceanBordesyMar_6
+  - first:
+      213: 1241500253701680197
+    second: oceanBordesyMar_7
+  - first:
+      213: 1602719835684102831
+    second: oceanBordesyMar_8
+  - first:
+      213: 3347361354918678760
+    second: oceanBordesyMar_9
+  - first:
+      213: 5267150988385267104
+    second: oceanBordesyMar_10
+  - first:
+      213: -2721525723100039530
+    second: oceanBordesyMar_11
+  - first:
+      213: -3433190957915992420
+    second: oceanBordesyMar_12
+  - first:
+      213: 4251315302601663138
+    second: oceanBordesyMar_13
+  - first:
+      213: 7662744470652152477
+    second: oceanBordesyMar_14
+  - first:
+      213: -478966923687948255
+    second: oceanBordesyMar_15
+  - first:
+      213: -7463638489340208272
+    second: oceanBordesyMar_16
+  - first:
+      213: 3272981600417797738
+    second: oceanBordesyMar_17
+  - first:
+      213: 2263675712010989143
+    second: oceanBordesyMar_18
+  - first:
+      213: -1162279847531680209
+    second: oceanBordesyMar_19
+  - first:
+      213: 3209231015959260130
+    second: oceanBordesyMar_20
+  - first:
+      213: -4530344803483501340
+    second: oceanBordesyMar_21
+  - first:
+      213: 8439404794495045648
+    second: oceanBordesyMar_22
+  - first:
+      213: 5763301284619472462
+    second: oceanBordesyMar_23
+  - first:
+      213: 5302996961491939216
+    second: oceanBordesyMar_24
+  - first:
+      213: 3891367569810331636
+    second: oceanBordesyMar_25
+  - first:
+      213: -6509627569357996313
+    second: oceanBordesyMar_26
+  - first:
+      213: -3644214761356705281
+    second: oceanBordesyMar_27
+  - first:
+      213: -2172477909891265111
+    second: oceanBordesyMar_28
+  - first:
+      213: 2791793021491997873
+    second: oceanBordesyMar_29
+  - first:
+      213: -1207093481625568771
+    second: oceanBordesyMar_30
+  - first:
+      213: -4602207485848525801
+    second: oceanBordesyMar_31
+  - first:
+      213: -5799215327967985407
+    second: oceanBordesyMar_32
+  - first:
+      213: 3037429207296295959
+    second: oceanBordesyMar_33
+  - first:
+      213: 6451924876544845462
+    second: oceanBordesyMar_34
+  - first:
+      213: 7014518055189344672
+    second: oceanBordesyMar_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: oceanBordesyMar_0
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 165
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.55074406, y: 0.5211439}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0cfda3f57d5d280800000000000000
+      internalID: -9019065874729942843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 165
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c515f9e47e5bb82a0800000000000000
+      internalID: -6734088812741308068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_2
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 165
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ec22c89f8151a60800000000000000
+      internalID: 7644043402608299550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_3
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 165
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf7d63e802e14f40800000000000000
+      internalID: 5711094330285719476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_4
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 165
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aa202d09d713d910800000000000000
+      internalID: 1860857292029700773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_5
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 165
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497868ffde50762d0800000000000000
+      internalID: -3285650883391092844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_6
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 165
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c94773220bffbaf30800000000000000
+      internalID: 4588041777360368796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_7
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 165
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c227a27e1ba3110800000000000000
+      internalID: 1241500253701680197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_8
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 165
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa26c60f2310e3610800000000000000
+      internalID: 1602719835684102831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_9
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 165
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e05cceca67347e20800000000000000
+      internalID: 3347361354918678760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_10
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 165
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad2d09daeda81940800000000000000
+      internalID: 5267150988385267104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_11
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 165
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696b88b26c23b3ad0800000000000000
+      internalID: -2721525723100039530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_12
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 101
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9e855b730bda50d0800000000000000
+      internalID: -3433190957915992420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_13
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 101
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a221c74eb4bffa30800000000000000
+      internalID: 4251315302601663138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_14
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 101
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a6fc14f79875a60800000000000000
+      internalID: 7662744470652152477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_15
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 101
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1201b6ede1e5a59f0800000000000000
+      internalID: -478966923687948255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_16
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 101
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b91f68654db6890800000000000000
+      internalID: -7463638489340208272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_17
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 101
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66da41bc67fb6d20800000000000000
+      internalID: 3272981600417797738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_18
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 101
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e281d01113a6f10800000000000000
+      internalID: 2263675712010989143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_19
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 101
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e674ef2a0cedfe0800000000000000
+      internalID: -1162279847531680209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_20
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 101
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ebea641b9a798c20800000000000000
+      internalID: 3209231015959260130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_21
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 101
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec345e676bf021c0800000000000000
+      internalID: -4530344803483501340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_22
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 101
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0101b9b52f9ce1570800000000000000
+      internalID: 8439404794495045648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_23
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 101
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ecb4babfb5bff40800000000000000
+      internalID: 5763301284619472462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_24
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09fe3b6d3a7089940800000000000000
+      internalID: 5302996961491939216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_25
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f71509ff2ae00630800000000000000
+      internalID: 3891367569810331636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_26
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eeb354173829a5a0800000000000000
+      internalID: -6509627569357996313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_27
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff149108bf52d6dc0800000000000000
+      internalID: -3644214761356705281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_28
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad4c8ae9dec9d1e0800000000000000
+      internalID: -2172477909891265111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_29
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bce17426f07eb620800000000000000
+      internalID: 2791793021491997873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_30
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9b409bfda8f3fe0800000000000000
+      internalID: -1207093481625568771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_31
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 714ea57dcaca120c0800000000000000
+      internalID: -4602207485848525801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_32
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101c770826c058fa0800000000000000
+      internalID: -5799215327967985407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_33
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 714ca4365cd172a20800000000000000
+      internalID: 3037429207296295959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_34
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69626ffcd77d98950800000000000000
+      internalID: 6451924876544845462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oceanBordesyMar_35
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1ff16b103985160800000000000000
+      internalID: 7014518055189344672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b01e866aab56e0a42ab301776039f4c9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      oceanBordesyMar_0: -9019065874729942843
+      oceanBordesyMar_1: -6734088812741308068
+      oceanBordesyMar_10: 5267150988385267104
+      oceanBordesyMar_11: -2721525723100039530
+      oceanBordesyMar_12: -3433190957915992420
+      oceanBordesyMar_13: 4251315302601663138
+      oceanBordesyMar_14: 7662744470652152477
+      oceanBordesyMar_15: -478966923687948255
+      oceanBordesyMar_16: -7463638489340208272
+      oceanBordesyMar_17: 3272981600417797738
+      oceanBordesyMar_18: 2263675712010989143
+      oceanBordesyMar_19: -1162279847531680209
+      oceanBordesyMar_2: 7644043402608299550
+      oceanBordesyMar_20: 3209231015959260130
+      oceanBordesyMar_21: -4530344803483501340
+      oceanBordesyMar_22: 8439404794495045648
+      oceanBordesyMar_23: 5763301284619472462
+      oceanBordesyMar_24: 5302996961491939216
+      oceanBordesyMar_25: 3891367569810331636
+      oceanBordesyMar_26: -6509627569357996313
+      oceanBordesyMar_27: -3644214761356705281
+      oceanBordesyMar_28: -2172477909891265111
+      oceanBordesyMar_29: 2791793021491997873
+      oceanBordesyMar_3: 5711094330285719476
+      oceanBordesyMar_30: -1207093481625568771
+      oceanBordesyMar_31: -4602207485848525801
+      oceanBordesyMar_32: -5799215327967985407
+      oceanBordesyMar_33: 3037429207296295959
+      oceanBordesyMar_34: 6451924876544845462
+      oceanBordesyMar_35: 7014518055189344672
+      oceanBordesyMar_4: 1860857292029700773
+      oceanBordesyMar_5: -3285650883391092844
+      oceanBordesyMar_6: 4588041777360368796
+      oceanBordesyMar_7: 1241500253701680197
+      oceanBordesyMar_8: 1602719835684102831
+      oceanBordesyMar_9: 3347361354918678760
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
