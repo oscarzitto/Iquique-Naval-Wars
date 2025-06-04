@@ -7,6 +7,8 @@ public class MovimientoJugador : MonoBehaviour
     public float torque = 20f;
     public float velocidadAngularMax = 50f;
 
+    public Animator animator;
+
     private Rigidbody2D rb;
     private Vector2 entradaMovimiento;
 
@@ -47,6 +49,10 @@ public class MovimientoJugador : MonoBehaviour
         float velocidadAngular = Mathf.Abs(rb.angularVelocity);
         float factorLimitador = Mathf.Clamp01(1f - (velocidadAngular / velocidadAngularMax));
         rb.AddTorque(giro * torque * factorLimitador);
+
+        //activa la animacion de movimiento
+        animator.SetFloat("movement", entradaMovimiento.y);
+
     }
 
 }
