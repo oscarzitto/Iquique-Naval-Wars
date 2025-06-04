@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      barco sheet (Idle)_0: -9140306803117020520
+      barco sheet (Idle)_1: -5565413571859086344
+      barco sheet (Idle)_2: -3233345708847755434
+      barco sheet (Idle)_3: -360855523256068416
+      barco sheet (Idle)_4: 9126692834973926074
+      barco sheet (Idle)_5: 3707085286839524816
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

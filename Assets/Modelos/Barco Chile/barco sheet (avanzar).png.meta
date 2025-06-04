@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      barco sheet (avanzar)_0: -6750743921517530059
+      barco sheet (avanzar)_1: 5126337505176970881
+      barco sheet (avanzar)_2: 7412515357628432761
+      barco sheet (avanzar)_3: 9049406310752364506
+      barco sheet (avanzar)_4: 52037026977530306
+      barco sheet (avanzar)_5: -6186106586806661409
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
