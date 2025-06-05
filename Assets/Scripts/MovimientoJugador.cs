@@ -3,10 +3,7 @@ using UnityEngine.InputSystem;
 
 public class MovimientoJugador : MonoBehaviour
 {
-    public float velocidad = 50f;
-    public float torque = 20f;
-    public float velocidadAngularMax = 50f;
-
+    public float velocidad = 5f;
     public Animator animator;
 
     private Rigidbody2D rb;
@@ -34,25 +31,17 @@ public class MovimientoJugador : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.linearDamping = 1f;
-        rb.angularDamping = 3f; // deja algo de inercia
-        rb.inertia = 4f;        // más resistencia al giro
+        rb.gravityScale = 0;
+        rb.freezeRotation = true; // Muy importante: evita que rote
     }
+
     void FixedUpdate()
     {
-        Vector2 direccion = transform.up * entradaMovimiento.y;
-        rb.AddForce(direccion * velocidad);
+        // Movimiento sin rotación, en ejes globales (arriba/abajo y izquierda/derecha)
+        Vector2 movimiento = entradaMovimiento * velocidad;
+        rb.linearVelocity = movimiento;
 
-        float giro = -entradaMovimiento.x;
-
-        // 🔧 Suavizado progresivo del torque al acercarse al límite de velocidad angular
-        float velocidadAngular = Mathf.Abs(rb.angularVelocity);
-        float factorLimitador = Mathf.Clamp01(1f - (velocidadAngular / velocidadAngularMax));
-        rb.AddTorque(giro * torque * factorLimitador);
-
-        //activa la animacion de movimiento
-        animator.SetFloat("movement", entradaMovimiento.y);
-
+        // Animación basada en movimiento vertical
+        animator.SetFloat("movement", Mathf.Abs(entradaMovimiento.y));
     }
-
 }
