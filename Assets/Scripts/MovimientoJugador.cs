@@ -6,6 +6,10 @@ public class MovimientoJugador : MonoBehaviour
     public float velocidad = 5f;
     public Animator animator;
 
+    public ParticleSystem estelaCentral;   // 💧 Partícula del motor
+    public ParticleSystem estelaIzquierda; // 🔁 Partícula al moverse a la izquierda
+    public ParticleSystem estelaDerecha;   // 🔁 Partícula al moverse a la derecha
+
     private Rigidbody2D rb;
     private Vector2 entradaMovimiento;
 
@@ -32,16 +36,59 @@ public class MovimientoJugador : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0;
-        rb.freezeRotation = true; // Muy importante: evita que rote
+        rb.freezeRotation = true;
+
+        DetenerTodasLasEstelas();
     }
 
     void FixedUpdate()
     {
-        // Movimiento sin rotación, en ejes globales (arriba/abajo y izquierda/derecha)
         Vector2 movimiento = entradaMovimiento * velocidad;
         rb.linearVelocity = movimiento;
 
-        // Animación basada en movimiento vertical
         animator.SetFloat("movement", Mathf.Abs(entradaMovimiento.y));
+
+        // 🔥 Control de partículas según dirección
+        ControlarEstelas(movimiento);
+    }
+
+    void ControlarEstelas(Vector2 movimiento)
+    {
+        // Motor: cuando hay movimiento hacia arriba
+        if (movimiento.y > 0.1f)
+            ActivarEstela(estelaCentral);
+        else
+            DesactivarEstela(estelaCentral);
+
+        // Izquierda
+        if (movimiento.x < -0.1f)
+            ActivarEstela(estelaIzquierda);
+        else
+            DesactivarEstela(estelaIzquierda);
+
+        // Derecha
+        if (movimiento.x > 0.1f)
+            ActivarEstela(estelaDerecha);
+        else
+            DesactivarEstela(estelaDerecha);
+    }
+
+    void ActivarEstela(ParticleSystem ps)
+    {
+        if (ps != null && !ps.isPlaying)
+            ps.Play();
+    }
+
+    void DesactivarEstela(ParticleSystem ps)
+    {
+        if (ps != null && ps.isPlaying)
+            ps.Stop();
+    }
+
+    void DetenerTodasLasEstelas()
+    {
+        DesactivarEstela(estelaCentral);
+        DesactivarEstela(estelaIzquierda);
+        DesactivarEstela(estelaDerecha);
     }
 }
