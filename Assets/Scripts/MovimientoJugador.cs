@@ -46,7 +46,7 @@ public class MovimientoJugador : MonoBehaviour
         Vector2 movimiento = entradaMovimiento * velocidad;
         rb.linearVelocity = movimiento;
 
-        animator.SetFloat("movement", Mathf.Abs(entradaMovimiento.y));
+        animator.SetFloat("movement", entradaMovimiento.magnitude);
 
         // 🔥 Control de partículas según dirección
         ControlarEstelas(movimiento);
