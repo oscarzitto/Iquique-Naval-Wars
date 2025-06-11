@@ -6903,7 +6903,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 677454762}
         m_TargetAssemblyTypeName: menu, Assembly-CSharp
-        m_MethodName: Opciones
+        m_MethodName: Creditos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
