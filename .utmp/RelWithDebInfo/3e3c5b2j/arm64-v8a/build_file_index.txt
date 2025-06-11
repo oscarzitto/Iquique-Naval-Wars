@@ -1,0 +1,3 @@
+C:\Users\leand\Desktop\proyecto integracion (3 septiembre)\Iquique-Naval-Wars\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Users\leand\Desktop\proyecto integracion (3 septiembre)\Iquique-Naval-Wars\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\FramePacing\CMakeLists.txt
+C:\Users\leand\Desktop\proyecto integracion (3 septiembre)\Iquique-Naval-Wars\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
