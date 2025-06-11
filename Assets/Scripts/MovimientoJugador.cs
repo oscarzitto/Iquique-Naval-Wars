@@ -6,6 +6,9 @@ public class MovimientoJugador : MonoBehaviour
     public float velocidad = 5f;
     public Animator animator;
 
+    public float inclinacionMaxima = 1f; // grados de inclinación máxima
+    public float suavizadoInclinacion = 10f; // qué tan rápido vuelve al centro
+
     public ParticleSystem estelaCentral;   // 💧 Partícula del motor
     public ParticleSystem estelaIzquierda; // 🔁 Partícula al moverse a la izquierda
     public ParticleSystem estelaDerecha;   // 🔁 Partícula al moverse a la derecha
@@ -46,7 +49,15 @@ public class MovimientoJugador : MonoBehaviour
         Vector2 movimiento = entradaMovimiento * velocidad;
         rb.linearVelocity = movimiento;
 
+        // 🎞 Activar animación según movimiento total
         animator.SetFloat("movement", entradaMovimiento.magnitude);
+
+        // 🔁 Inclinación del sprite al moverse lateralmente
+        float anguloObjetivo = -entradaMovimiento.x * inclinacionMaxima;
+        float anguloActual = transform.rotation.eulerAngles.z;
+        if (anguloActual > 180) anguloActual -= 360f;
+        float anguloSuavizado = Mathf.LerpAngle(anguloActual, anguloObjetivo, suavizadoInclinacion * Time.fixedDeltaTime);
+        transform.rotation = Quaternion.Euler(0, 0, anguloSuavizado);
 
         // 🔥 Control de partículas según dirección
         ControlarEstelas(movimiento);
