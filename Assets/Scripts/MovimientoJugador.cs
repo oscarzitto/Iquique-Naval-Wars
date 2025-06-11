@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class MovimientoJugador : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class MovimientoJugador : MonoBehaviour
     private Vector2 entradaMovimiento;
 
     private ControlesJugador controles;
+
+    public Slider barraVida; // Asigna el slider de vidaChile en el Inspector
+    public int vidaMaxima = 100;
+    private int vidaActual;
 
     void Awake()
     {
@@ -42,6 +47,16 @@ public class MovimientoJugador : MonoBehaviour
         rb.freezeRotation = true;
 
         DetenerTodasLasEstelas();
+
+        // Inicialización de vida
+        vidaActual = vidaMaxima;
+
+        if (barraVida != null)
+        {
+            barraVida.minValue = 0;
+            barraVida.maxValue = vidaMaxima;
+            barraVida.value = vidaActual;
+        }
     }
 
     void FixedUpdate()
@@ -61,7 +76,31 @@ public class MovimientoJugador : MonoBehaviour
 
         // 🔥 Control de partículas según dirección
         ControlarEstelas(movimiento);
+
+        if (Keyboard.current.hKey.wasPressedThisFrame)
+        {
+            RecibirDanio(10); // Baja 10 de vida con tecla H **** DE PRUEBA *****
+        }
     }
+    void ActualizarBarraVida()
+    {
+        if (barraVida != null)
+            barraVida.value = vidaActual; // Valor entero directo (0 a 100)
+    }
+
+    public void RecibirDanio(int cantidad)
+    {
+        vidaActual -= cantidad;
+        vidaActual = Mathf.Clamp(vidaActual, 0, vidaMaxima);
+        ActualizarBarraVida();
+
+        if (vidaActual <= 0)
+        {
+            Debug.Log("¡Jugador destruido!");
+            // Aquí puedes desactivar al jugador, reproducir animación, etc.
+        }
+    }
+
 
     void ControlarEstelas(Vector2 movimiento)
     {
