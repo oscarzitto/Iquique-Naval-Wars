@@ -1,0 +1,51 @@
+﻿using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
+
+public class Enemigo : MonoBehaviour
+{
+    public Slider barraVida; // Asigna el Slider vidaPeru
+    public int vidaMaxima = 100;
+    private int vidaActual;
+
+    void Start()
+    {
+        vidaActual = vidaMaxima;
+
+        if (barraVida != null)
+        {
+            barraVida.minValue = 0;
+            barraVida.maxValue = vidaMaxima;
+            barraVida.value = vidaActual;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        // 🔁 *****PRUEBA*****: baja vida con tecla G
+        if (Keyboard.current.gKey.wasPressedThisFrame)
+        {
+            RecibirDanio(10);
+        }
+    }
+
+    public void RecibirDanio(int cantidad)
+    {
+        vidaActual -= cantidad;
+        vidaActual = Mathf.Clamp(vidaActual, 0, vidaMaxima);
+        ActualizarBarraVida();
+
+        if (vidaActual <= 0)
+        {
+            Debug.Log("¡Enemigo destruido!");
+            // Aquí puedes destruir el enemigo o activar alguna animación
+        }
+    }
+
+    void ActualizarBarraVida()
+    {
+        if (barraVida != null)
+            barraVida.value = vidaActual;
+    }
+}
+
