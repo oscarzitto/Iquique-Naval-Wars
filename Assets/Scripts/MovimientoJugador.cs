@@ -7,21 +7,23 @@ public class MovimientoJugador : MonoBehaviour
     public float velocidad = 5f;
     public Animator animator;
 
-    public float inclinacionMaxima = 1f; // grados de inclinación máxima
-    public float suavizadoInclinacion = 10f; // qué tan rápido vuelve al centro
+    public float inclinacionMaxima = 1f;
+    public float suavizadoInclinacion = 10f;
 
-    public ParticleSystem estelaCentral;   // 💧 Partícula del motor
-    public ParticleSystem estelaIzquierda; // 🔁 Partícula al moverse a la izquierda
-    public ParticleSystem estelaDerecha;   // 🔁 Partícula al moverse a la derecha
+    public ParticleSystem estelaCentral;
+    public ParticleSystem estelaIzquierda;
+    public ParticleSystem estelaDerecha;
 
     private Rigidbody2D rb;
     private Vector2 entradaMovimiento;
-
     private ControlesJugador controles;
 
-    public Slider barraVida; // Asigna el slider de vidaChile en el Inspector
+    public Slider barraVida;
     public int vidaMaxima = 100;
     private int vidaActual;
+
+    public GameObject timonypumba; // Referencia al timón
+    public float velocidadGiroTimon = 200f;
 
     void Awake()
     {
@@ -48,7 +50,6 @@ public class MovimientoJugador : MonoBehaviour
 
         DetenerTodasLasEstelas();
 
-        // Inicialización de vida
         vidaActual = vidaMaxima;
 
         if (barraVida != null)
@@ -64,28 +65,32 @@ public class MovimientoJugador : MonoBehaviour
         Vector2 movimiento = entradaMovimiento * velocidad;
         rb.linearVelocity = movimiento;
 
-        // 🎞 Activar animación según movimiento total
         animator.SetFloat("movement", entradaMovimiento.magnitude);
 
-        // 🔁 Inclinación del sprite al moverse lateralmente
         float anguloObjetivo = -entradaMovimiento.x * inclinacionMaxima;
         float anguloActual = transform.rotation.eulerAngles.z;
         if (anguloActual > 180) anguloActual -= 360f;
         float anguloSuavizado = Mathf.LerpAngle(anguloActual, anguloObjetivo, suavizadoInclinacion * Time.fixedDeltaTime);
         transform.rotation = Quaternion.Euler(0, 0, anguloSuavizado);
 
-        // 🔥 Control de partículas según dirección
         ControlarEstelas(movimiento);
+
+        if (timonypumba != null)
+        {
+            float rotacionTimon = entradaMovimiento.x * velocidadGiroTimon * Time.fixedDeltaTime;
+            timonypumba.transform.Rotate(0, 0, -rotacionTimon);
+        }
 
         if (Keyboard.current.hKey.wasPressedThisFrame)
         {
-            RecibirDanio(10); // Baja 10 de vida con tecla H **** DE PRUEBA *****
+            RecibirDanio(10);
         }
     }
+
     void ActualizarBarraVida()
     {
         if (barraVida != null)
-            barraVida.value = vidaActual; // Valor entero directo (0 a 100)
+            barraVida.value = vidaActual;
     }
 
     public void RecibirDanio(int cantidad)
@@ -97,26 +102,21 @@ public class MovimientoJugador : MonoBehaviour
         if (vidaActual <= 0)
         {
             Debug.Log("¡Jugador destruido!");
-            // Aquí puedes desactivar al jugador, reproducir animación, etc.
         }
     }
 
-
     void ControlarEstelas(Vector2 movimiento)
     {
-        // Motor: cuando hay movimiento hacia arriba
         if (movimiento.y > 0.1f)
             ActivarEstela(estelaCentral);
         else
             DesactivarEstela(estelaCentral);
 
-        // Izquierda
         if (movimiento.x < -0.1f)
             ActivarEstela(estelaIzquierda);
         else
             DesactivarEstela(estelaIzquierda);
 
-        // Derecha
         if (movimiento.x > 0.1f)
             ActivarEstela(estelaDerecha);
         else
@@ -140,5 +140,11 @@ public class MovimientoJugador : MonoBehaviour
         DesactivarEstela(estelaCentral);
         DesactivarEstela(estelaIzquierda);
         DesactivarEstela(estelaDerecha);
+    }
+
+    // 🌟 Método para recibir input desde el timón
+    public void AplicarEntradaManual(float movimientoX)
+    {
+        entradaMovimiento.x = Mathf.Clamp(movimientoX / velocidadGiroTimon, -1f, 1f);
     }
 }
