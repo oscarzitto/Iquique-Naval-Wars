@@ -1,0 +1,12 @@
+# ninja log v5
+73	602	7713354270294734	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	af6c882db519a9ee
+605	4226	7713354294430678	C:/Users/leand/Desktop/proyecto integracion (3 septiembre)/Iquique-Naval-Wars/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3e3c5b2j/obj/arm64-v8a/libswappywrapper.so	87f553ef3054a10f
+36	5288	7713354316074461	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	32eb8e2fdf9c703a
+45	5483	7713354315717955	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	2ddb2f16317e66c
+2	5557	7713354315219960	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	a8fe4629f03127f5
+63	5690	7713354317805017	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	d1c0cbb173c3c4ae
+9	5693	7713354318099807	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	306aa8c473f4aed8
+55	5938	7713354323300283	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	124eaefe4e8b0705
+25	6000	7713354324043915	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	ceb9e6139656bf05
+16	6561	7713354329714428	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	b448ebc8b9190a5e
+6563	6942	7713354333742328	C:/Users/leand/Desktop/proyecto integracion (3 septiembre)/Iquique-Naval-Wars/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3e3c5b2j/obj/arm64-v8a/libgame.so	fafa0fdfe93c50c2
