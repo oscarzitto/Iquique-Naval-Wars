@@ -44,7 +44,7 @@ public class AudioManager : MonoBehaviour
     {
         switch (escena)
         {
-            case "MenuPrincipal": 
+            case "menú": 
                 audioSource.clip = menuMusic; break;
             case "Opciones":      
                 audioSource.clip = opcionesMusic; break;
