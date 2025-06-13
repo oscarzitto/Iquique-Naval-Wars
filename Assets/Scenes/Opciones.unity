@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1150150824}
-  menuMusic: {fileID: 8300000, guid: ba5a64f27dc358f4c88a0d4e55f04477, type: 3}
+  menuMusic: {fileID: 8300000, guid: 4df551dbf408db94c9138bda01e9effd, type: 3}
   opcionesMusic: {fileID: 8300000, guid: ba5a64f27dc358f4c88a0d4e55f04477, type: 3}
   creditosMusic: {fileID: 0}
   gameplayMusic: {fileID: 0}

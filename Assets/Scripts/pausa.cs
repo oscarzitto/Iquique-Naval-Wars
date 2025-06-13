@@ -1,44 +1,39 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement; // Necesario para manejar las escenas
+using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ControladorDePausa : MonoBehaviour
 {
-    public GameObject menuPausa;
-    public bool juegoPausado = false;
+    [SerializeField] private GameObject botonPausa;
+    [SerializeField] private GameObject menuPausa;
 
-    private InputAction pausarInput;
+    private bool juegoPausado = false;
+    private PlayerInput playerInput;
+    private InputAction pausaAction;
+
+    private void Awake()
+    {
+        playerInput = GetComponent<PlayerInput>();
+        pausaAction = playerInput.actions["Pausar"]; // Define una acción "Pausar" en el Input System
+    }
 
     private void OnEnable()
     {
-        pausarInput = new InputAction(type: InputActionType.Button, binding: "<Keyboard>/escape");
-        pausarInput.performed += ctx => TogglePausa();
-        pausarInput.Enable();
+        pausaAction.performed += _ => AlternarPausa();
     }
 
     private void OnDisable()
     {
-        pausarInput.Disable();
+        pausaAction.performed -= _ => AlternarPausa();
     }
 
-    private void TogglePausa()
+    private void AlternarPausa()
     {
-        if (juegoPausado)
-            Reanudar();
-        else
-            Pausar();
-    }
-
-    public void Pausar()
-    {
-        menuPausa.SetActive(true);
-        Time.timeScale = 0f;
-        juegoPausado = true;
-    }
-
-    public void Reanudar()
-    {
-        menuPausa.SetActive(false);
-        Time.timeScale = 1f;
-        juegoPausado = false;
+        juegoPausado = !juegoPausado;
+        Time.timeScale = juegoPausado ? 0f : 1f;
+        botonPausa.SetActive(!juegoPausado);
+        menuPausa.SetActive(juegoPausado);
     }
 }
