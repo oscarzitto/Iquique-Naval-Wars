@@ -4,14 +4,22 @@ using UnityEngine.UI;
 
 public class MovimientoJugador : MonoBehaviour
 {
+    [Header("Joystick Móvil")]
+    public Joystick joystick;         // Arrastra aquí tu Joystick de la UI
+    public bool usarJoystick = true;  // Activa / desactiva la lectura del joystick
+
     [Header("Movimiento y Animación")]
     public float velocidad = 5f;
+    public bool ConFisicas = false;   // Si es true usa AddForce, si no Translate
+    public Rigidbody2D rb;            // Arrastra aquí tu Rigidbody2D
     public Animator animator;
+
+    [Header("Inclinación")]
     public float inclinacionMaxima = 1f;
     public float suavizadoInclinacion = 10f;
 
     [Header("Estelas de Humo/Vapor")]
-    public ParticleSystem estelaCentral;   // Vapor del motor (siempre ON)
+    public ParticleSystem estelaCentral;
     public ParticleSystem estelaIzquierda;
     public ParticleSystem estelaDerecha;
 
@@ -24,7 +32,7 @@ public class MovimientoJugador : MonoBehaviour
     public GameObject timonypumba;
     public float velocidadGiroTimon = 200f;
 
-    private Rigidbody2D rb;
+    // Input System
     private Vector2 entradaMovimiento;
     private ControlesJugador controles;
 
@@ -47,22 +55,12 @@ public class MovimientoJugador : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0;
+        // Asegurarte de tener el Rigidbody
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale   = 0;
         rb.freezeRotation = true;
 
-        // Apaga todas las estelas primero
-        DetenerTodasLasEstelas();
-
-        // ¡Arranca siempre el vapor central!
-        if (estelaCentral != null)
-        {
-            estelaCentral.loop        = true;
-            estelaCentral.playOnAwake = true;
-            estelaCentral.Play();
-        }
-
-        // Configurar barra de vida
+        // Vida
         vidaActual = vidaMaxima;
         if (barraVida != null)
         {
@@ -70,35 +68,94 @@ public class MovimientoJugador : MonoBehaviour
             barraVida.maxValue = vidaMaxima;
             barraVida.value    = vidaActual;
         }
+
+        // Estelas
+        DetenerTodasLasEstelas();
+        if (estelaCentral != null)
+        {
+            estelaCentral.loop        = true;
+            estelaCentral.playOnAwake = true;
+            estelaCentral.Play();
+        }
+    }
+
+    void Update()
+    {
+        // Si usamos joystick, sobrescribimos la entrada del InputSystem
+        if (usarJoystick && joystick != null)
+        {
+            entradaMovimiento = new Vector2(joystick.Horizontal, joystick.Vertical);
+        }
     }
 
     void FixedUpdate()
     {
-        // Movimiento + velocidad
-        Vector2 movimiento     = entradaMovimiento * velocidad;
-        rb.linearVelocity      = movimiento;
-        animator.SetFloat("movement", entradaMovimiento.magnitude);
+        // 1) Calcula la dirección final
+        Vector2 dir = entradaMovimiento;
 
-        // Inclinación suave del barco
-        float objetivoZ = -entradaMovimiento.x * inclinacionMaxima;
+        // 2) Movimiento según flag ConFisicas
+        if (ConFisicas)
+        {
+            rb.AddForce(dir * velocidad * Time.fixedDeltaTime,
+                        ForceMode2D.Impulse);
+        }
+        else
+        {
+            transform.Translate(dir * velocidad * Time.fixedDeltaTime);
+        }
+
+        // 3) Animación
+        if (animator != null)
+            animator.SetFloat("movement", dir.magnitude);
+
+        // 4) Inclinación suave del barco
+        float objetivoZ = -dir.x * inclinacionMaxima;
         float actualZ  = transform.rotation.eulerAngles.z;
         if (actualZ > 180) actualZ -= 360f;
-        float suavizadoZ = Mathf.LerpAngle(actualZ, objetivoZ, suavizadoInclinacion * Time.fixedDeltaTime);
+        float suavizadoZ = Mathf.LerpAngle(actualZ, objetivoZ,
+                                           suavizadoInclinacion * Time.fixedDeltaTime);
         transform.rotation = Quaternion.Euler(0, 0, suavizadoZ);
 
-        // Control de estelas
-        ControlarEstelas(movimiento);
+        // 5) Control de estelas
+        ControlarEstelas(dir);
 
-        // Giro del timón
+        // 6) Giro del timón
         if (timonypumba != null)
         {
-            float giro = entradaMovimiento.x * velocidadGiroTimon * Time.fixedDeltaTime;
+            float giro = dir.x * velocidadGiroTimon * Time.fixedDeltaTime;
             timonypumba.transform.Rotate(0, 0, -giro);
         }
 
-        // Prueba de daño manual
+        // 7) Prueba de daño manual (tecla H)
         if (Keyboard.current.hKey.wasPressedThisFrame)
             RecibirDanio(10);
+    }
+
+    void ControlarEstelas(Vector2 movimiento)
+    {
+        ActivarEstela(estelaCentral);
+        if (movimiento.x < -0.1f) ActivarEstela(estelaIzquierda);
+        else                       DesactivarEstela(estelaIzquierda);
+
+        if (movimiento.x > 0.1f)  ActivarEstela(estelaDerecha);
+        else                       DesactivarEstela(estelaDerecha);
+    }
+
+    void ActivarEstela(ParticleSystem ps)
+    {
+        if (ps != null && !ps.isPlaying) ps.Play();
+    }
+
+    void DesactivarEstela(ParticleSystem ps)
+    {
+        if (ps != null && ps.isPlaying) ps.Stop();
+    }
+
+    void DetenerTodasLasEstelas()
+    {
+        DesactivarEstela(estelaCentral);
+        DesactivarEstela(estelaIzquierda);
+        DesactivarEstela(estelaDerecha);
     }
 
     void ActualizarBarraVida()
@@ -110,49 +167,15 @@ public class MovimientoJugador : MonoBehaviour
     public void RecibirDanio(int cantidad)
     {
         vidaActual -= cantidad;
-        vidaActual = Mathf.Clamp(vidaActual, 0, vidaMaxima);
+        vidaActual  = Mathf.Clamp(vidaActual, 0, vidaMaxima);
         ActualizarBarraVida();
-
-        if (vidaActual <= 0)
-            Debug.Log("¡Jugador destruido!");
+        if (vidaActual <= 0) Debug.Log("¡Jugador destruido!");
     }
 
-    void ControlarEstelas(Vector2 movimiento)
-    {
-        // 1) Vapor central siempre encendido
-        ActivarEstela(estelaCentral);
-
-        // 2) Estela izquierda al girar hacia la izquierda
-        if (movimiento.x < -0.1f) ActivarEstela(estelaIzquierda);
-        else                     DesactivarEstela(estelaIzquierda);
-
-        // 3) Estela derecha al girar hacia la derecha
-        if (movimiento.x > 0.1f)  ActivarEstela(estelaDerecha);
-        else                      DesactivarEstela(estelaDerecha);
-    }
-
-    void ActivarEstela(ParticleSystem ps)
-    {
-        if (ps != null && !ps.isPlaying)
-            ps.Play();
-    }
-
-    void DesactivarEstela(ParticleSystem ps)
-    {
-        if (ps != null && ps.isPlaying)
-            ps.Stop();
-    }
-
-    void DetenerTodasLasEstelas()
-    {
-        DesactivarEstela(estelaCentral);
-        DesactivarEstela(estelaIzquierda);
-        DesactivarEstela(estelaDerecha);
-    }
-
-    // 🌟 Permite recibir input manual externo (por ejemplo desde UI de timón)
+    // 🌟 Entrada manual para UI externa (ej. un timón deslizable)
     public void AplicarEntradaManual(float movimientoX)
     {
-        entradaMovimiento.x = Mathf.Clamp(movimientoX / velocidadGiroTimon, -1f, 1f);
+        entradaMovimiento.x = Mathf.Clamp(
+            movimientoX / velocidadGiroTimon, -1f, 1f);
     }
 }
