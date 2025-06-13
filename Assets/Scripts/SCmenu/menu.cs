@@ -7,6 +7,7 @@ public class menu : MonoBehaviour
     {
         Debug.Log("Jugar() invocado");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1f;
     }
 
     public void Opciones()
@@ -20,7 +21,11 @@ public class menu : MonoBehaviour
         Debug.Log("Creditos() invocado");
         SceneManager.LoadScene("Creditos");
     }
-
+    public void tutorial()
+    {
+        Debug.Log("Tutorial() invocado");
+        SceneManager.LoadScene("Tutorial");
+    }
     public void Salir()
     {
         Debug.Log("Salir() invocado");
