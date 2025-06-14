@@ -9,6 +9,7 @@ public class CreditsController : MonoBehaviour
     // Método a enlazar en el OnClick de VolverButton
     public void VolverAlMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(menuSceneName);
     }
 }
