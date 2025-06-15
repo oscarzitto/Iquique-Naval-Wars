@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c5b98e2140a597e46a6409d28450836b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - estelaPrefab: {fileID: 2895878532384350292, guid: c7550d43028a5de4e8abbb6ee898b102, type: 3}
+  - proyectilPrefab: {fileID: 5065247692176759064, guid: 3c195d3492e92ab4b82ea04c826b21d8, type: 3}
+  - puntoDisparo: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
