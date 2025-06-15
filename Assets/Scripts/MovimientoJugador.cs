@@ -15,7 +15,7 @@ public class MovimientoJugador : MonoBehaviour
     public Animator animator;
 
     [Header("Inclinación")]
-    public float inclinacionMaxima = 1f;
+    public float inclinacionMaxima = 5f;
     public float suavizadoInclinacion = 10f;
 
     [Header("Estelas de Humo/Vapor")]
