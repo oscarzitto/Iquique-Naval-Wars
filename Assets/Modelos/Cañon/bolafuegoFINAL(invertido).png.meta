@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 0290cac8025807b478f0c01b6642d9f4
+guid: 7b77e26b8da60494ab8e29589ca42868
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 230871443731811579
-    second: Copilot_20250613_070631_0
+      213: -4983015402831950642
+    second: bolafuegoFINAL(invertido)_0
+  - first:
+      213: -8848471892617464944
+    second: bolafuegoFINAL(invertido)_1
+  - first:
+      213: -8251919622410541112
+    second: bolafuegoFINAL(invertido)_2
+  - first:
+      213: -5543076355746222392
+    second: bolafuegoFINAL(invertido)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Copilot_20250613_070631_0
+      name: bolafuegoFINAL(invertido)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 283
+        y: 706
+        width: 110
+        height: 273
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bfc8a68da58343300800000000000000
-      internalID: 230871443731811579
+      spriteID: 3388c4d7dac3c1b4a967c7ef786b83a6
+      internalID: 2145704527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolafuegoFINAL(invertido)_1
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 706
+        width: 94
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33211998de5fd3c47ae1fef513a3c6bf
+      internalID: -1793239136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolafuegoFINAL(invertido)_2
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 705
+        width: 102
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0be8b9ce2abc943947884a19b8af75
+      internalID: 529669683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolafuegoFINAL(invertido)_3
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 706
+        width: 110
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63524de85b4ebce40904eb62fcf37c64
+      internalID: 25975900
       vertices: []
       indices: 
       edges: []
@@ -138,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1447cebd4024b864f90f420f665636c8
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +221,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Copilot_20250613_070631_0: 230871443731811579
+      bolafuegoFINAL(invertido)_0: 2145704527
+      bolafuegoFINAL(invertido)_1: -1793239136
+      bolafuegoFINAL(invertido)_2: 529669683
+      bolafuegoFINAL(invertido)_3: 25975900
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
