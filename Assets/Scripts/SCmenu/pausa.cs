@@ -1,18 +1,25 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;  // necesario para SceneManager
+using UnityEngine.SceneManagement;
 
 public class ControladorDePausa : MonoBehaviour
 {
     [Header("UI")]
     public GameObject menuPausa;
 
-    [Header("Escena")]
+    [Header("Escenas")]
     [Tooltip("Nombre exacto de la escena de menú tal como está en Build Settings")]
-    public string nombreEscenaMenu = "Menu";
+    public string nombreEscenaMenu = "Menú";
 
     private bool juegoPausado = false;
     private InputAction pausarInput;
+    private string escenaActual;
+
+    private void Awake()
+    {
+        // Guarda el nombre de la escena activa para ReiniciarPartida
+        escenaActual = SceneManager.GetActiveScene().name;
+    }
 
     private void OnEnable()
     {
@@ -48,12 +55,35 @@ public class ControladorDePausa : MonoBehaviour
         juegoPausado = false;
     }
 
-    // Ahora guarda antes de cargar el menú
+    /// <summary>
+    /// Guarda el estado y vuelve al menú principal
+    /// </summary>
     public void VolverAlMenu()
     {
-        Time.timeScale = 1f;                       // desbloqueamos el tiempo
-        GameManager.Instance.SaveGameState();      // <— guardamos aquí el estado
-        SceneManager.LoadScene(nombreEscenaMenu, 
-                               LoadSceneMode.Single);
+        Time.timeScale = 1f;
+        GameManager.Instance.SaveGameState();  // tu método existente
+        SceneManager.LoadScene(nombreEscenaMenu, LoadSceneMode.Single);
+    }
+
+    /// <summary>
+    /// Reinicia la partida: borra datos guardados y recarga la escena actual
+    /// </summary>
+    public void ReiniciarPartida()
+    {
+        // 1) Desbloquea el tiempo
+        Time.timeScale = 1f;
+
+        // 2) Borra las llaves de PlayerPrefs que usan tus sistemas de guardado
+        PlayerPrefs.DeleteKey("VidaGuardada");
+        PlayerPrefs.DeleteKey("PosicionX");
+        PlayerPrefs.DeleteKey("PosicionY");
+        PlayerPrefs.DeleteKey("PosicionZ");
+        PlayerPrefs.Save();
+
+        // (Opcional) Si tienes un método ResetData en tu DataManager:
+        // DataManager.instance.ResetData();
+
+        // 3) Recarga la escena donde estabas
+        SceneManager.LoadScene(escenaActual, LoadSceneMode.Single);
     }
 }
