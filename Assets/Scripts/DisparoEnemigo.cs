@@ -21,10 +21,9 @@ public class DisparoEnemigo : MonoBehaviour
     System.Collections.IEnumerator AdvertenciaYDisparo()
     {
         // Mostrar la estela visual
-        GameObject estela = Instantiate(estelaPrefab, new Vector3(puntoDisparo.position.x, puntoDisparo.position.y, 0), Quaternion.identity);
-
-        // Ajustar la estela para que se estire hacia arriba
-        estela.transform.localScale = new Vector3(0.2f, 10f, 1f); // o lo que necesites según el tamaño
+        GameObject estela = Instantiate(estelaPrefab, puntoDisparo.position, Quaternion.identity);
+        // Hacer que la estela siga al punto de disparo
+        estela.transform.SetParent(puntoDisparo);
 
         yield return new WaitForSeconds(tiempoAdvertencia);
 
