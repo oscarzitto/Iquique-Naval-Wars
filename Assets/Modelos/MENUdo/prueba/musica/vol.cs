@@ -7,6 +7,7 @@ public class OptionsController : MonoBehaviour
     [Header("UI Components")]
     [SerializeField] private Slider sliderVolumen;
     [SerializeField] private string nombreEscenaMenu = "MenuPrincipal";
+    [SerializeField] private string nombreEscenaCreditos = "Creditos";
 
     private const string PREF_VOL_KEY = "VolumenGlobal";
 
@@ -38,5 +39,11 @@ public class OptionsController : MonoBehaviour
     public void VolverAlMenu()
     {
         SceneManager.LoadScene(nombreEscenaMenu);
+    }
+
+    // Asigna este método al botón “Créditos”
+    public void IrACreditos()
+    {
+        SceneManager.LoadScene(nombreEscenaCreditos);
     }
 }
