@@ -6,8 +6,8 @@ public class Menu : MonoBehaviour
     public void Jugar()
     {
         Debug.Log("Jugar() invocado");
-        Time.timeScale = 1f; // Asegura que el tiempo esté normal
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Carga la siguiente escena
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void Opciones()
@@ -31,6 +31,25 @@ public class Menu : MonoBehaviour
     public void Salir()
     {
         Debug.Log("Salir() invocado");
-        Application.Quit(); // Cierra la aplicación
+        Application.Quit();
+    }
+
+    public void ReiniciarPartida()
+    {
+        Debug.Log("ReiniciarPartida() invocado");
+
+        // 1) Tiempo normal por si estaba en pausa
+        Time.timeScale = 1f;
+
+        // 2) Borrar datos guardados
+        PlayerPrefs.DeleteKey("VidaGuardada");
+        PlayerPrefs.DeleteKey("PosicionX");
+        PlayerPrefs.DeleteKey("PosicionY");
+        PlayerPrefs.DeleteKey("PosicionZ");
+        PlayerPrefs.Save();
+
+        // 3) Recargar esta escena del menú
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
