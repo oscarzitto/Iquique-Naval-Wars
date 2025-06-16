@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement; // Necesitamos esto para la lógica de guardado al salir
+using UnityEngine.SceneManagement; // Para reiniciar escena o volver al menú
 
 public class MovimientoJugador : MonoBehaviour
 {
@@ -33,6 +33,10 @@ public class MovimientoJugador : MonoBehaviour
     public GameObject timonypumba;
     public float velocidadGiroTimon = 200f;
 
+    [Header("Game Over UI")]
+    [Tooltip("Arrastra aquí el GameObject con tu script GameOverUI")]
+    public GameOverUI gameOverUI;
+
     private Vector2 entradaMovimiento;
     private ControlesJugador controles;
 
@@ -45,7 +49,7 @@ public class MovimientoJugador : MonoBehaviour
     {
         controles.Jugador.Enable();
         controles.Jugador.Mover.performed += ctx => entradaMovimiento = ctx.ReadValue<Vector2>();
-        controles.Jugador.Mover.canceled += ctx => entradaMovimiento = Vector2.zero;
+        controles.Jugador.Mover.canceled  += ctx => entradaMovimiento = Vector2.zero;
     }
 
     void OnDisable()
@@ -55,23 +59,24 @@ public class MovimientoJugador : MonoBehaviour
 
     void Start()
     {
+        // Rigidbody2D setup
         if (rb == null) rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0;
         rb.freezeRotation = true;
 
-        // --- MODIFICADO: Lógica de vida y carga de datos ---
-        // 1. Establece la vida máxima por defecto
+        // Vida y barra
         vidaActual = vidaMaxima;
         if (barraVida != null)
         {
             barraVida.minValue = 0;
             barraVida.maxValue = vidaMaxima;
+            ActualizarBarraVida();
         }
 
-        // 2. Intenta cargar los datos guardados. Esto sobreescribirá los valores por defecto si existen.
+        // Carga guardado
         CargarDatos();
-        // --- FIN DE LA MODIFICACIÓN ---
 
+        // Partículas
         DetenerTodasLasEstelas();
         if (estelaCentral != null)
         {
@@ -79,117 +84,101 @@ public class MovimientoJugador : MonoBehaviour
             estelaCentral.playOnAwake = true;
             estelaCentral.Play();
         }
+
+        // Referencia a GameOverUI
+        if (gameOverUI == null)
+            gameOverUI = FindObjectOfType<GameOverUI>();
     }
 
     void Update()
     {
         if (usarJoystick && joystick != null)
-        {
             entradaMovimiento = new Vector2(joystick.Horizontal, joystick.Vertical);
-        }
     }
 
     void FixedUpdate()
     {
         Vector2 dir = entradaMovimiento;
 
+        // Movimiento
         if (ConFisicas)
-        {
             rb.AddForce(dir * velocidad * Time.fixedDeltaTime, ForceMode2D.Impulse);
-        }
         else
-        {
             transform.Translate(dir * velocidad * Time.fixedDeltaTime);
-        }
 
+        // Animación
         if (animator != null)
             animator.SetFloat("movement", dir.magnitude);
 
+        // Inclinación
         float objetivoZ = -dir.x * inclinacionMaxima;
-        float actualZ = transform.rotation.eulerAngles.z;
+        float actualZ  = transform.rotation.eulerAngles.z;
         if (actualZ > 180) actualZ -= 360f;
         float suavizadoZ = Mathf.LerpAngle(actualZ, objetivoZ, suavizadoInclinacion * Time.fixedDeltaTime);
         transform.rotation = Quaternion.Euler(0, 0, suavizadoZ);
 
+        // Estelas
         ControlarEstelas(dir);
 
+        // Girar timón
         if (timonypumba != null)
         {
             float giro = dir.x * velocidadGiroTimon * Time.fixedDeltaTime;
             timonypumba.transform.Rotate(0, 0, -giro);
         }
 
+        // Prueba de daño con H
         if (Keyboard.current.hKey.wasPressedThisFrame)
             RecibirDanio(10);
     }
-    
-    // --- AÑADIDO: Funciones de Guardado y Cargado ---
 
+    #region Guardado y Carga
     public void GuardarDatos()
     {
-        // Guardamos los datos actuales en el disco
         PlayerPrefs.SetInt("VidaGuardada", vidaActual);
         PlayerPrefs.SetFloat("PosicionX", transform.position.x);
         PlayerPrefs.SetFloat("PosicionY", transform.position.y);
-        PlayerPrefs.SetFloat("PosicionZ", transform.position.z); // Guardamos Z por si acaso, no hace daño en 2D
-        
-        PlayerPrefs.Save(); // Aplica los cambios guardados
-        Debug.Log("Datos del jugador guardados en Posición: " + transform.position + " y Vida: " + vidaActual);
+        PlayerPrefs.SetFloat("PosicionZ", transform.position.z);
+        PlayerPrefs.Save();
+        Debug.Log($"[SAVE] Posición: {transform.position} | Vida: {vidaActual}");
     }
 
     public void CargarDatos()
     {
-        // Comprobamos si hay datos guardados para evitar errores
         if (PlayerPrefs.HasKey("VidaGuardada"))
         {
-            // Cargamos la vida y actualizamos la barra de vida
             vidaActual = PlayerPrefs.GetInt("VidaGuardada");
             ActualizarBarraVida();
 
-            // Cargamos la posición
-            float posX = PlayerPrefs.GetFloat("PosicionX");
-            float posY = PlayerPrefs.GetFloat("PosicionY");
-            float posZ = PlayerPrefs.GetFloat("PosicionZ");
-            transform.position = new Vector3(posX, posY, posZ);
-            
-            Debug.Log("Datos del jugador cargados. Posición: " + transform.position + " | Vida: " + vidaActual);
+            float x = PlayerPrefs.GetFloat("PosicionX");
+            float y = PlayerPrefs.GetFloat("PosicionY");
+            float z = PlayerPrefs.GetFloat("PosicionZ");
+            transform.position = new Vector3(x, y, z);
+
+            Debug.Log($"[LOAD] Posición: {transform.position} | Vida: {vidaActual}");
         }
         else
         {
-            // Si no hay datos, simplemente actualizamos la barra con la vida máxima inicial
             ActualizarBarraVida();
-            Debug.Log("No se encontraron datos guardados. Empezando de cero.");
+            Debug.Log("No se encontraron datos guardados. Empezando con valores por defecto.");
         }
     }
+    #endregion
 
-    // --- FIN DE LAS FUNCIONES AÑADIDAS ---
-
-    void ControlarEstelas(Vector2 movimiento)
+    #region Estelas
+    void ControlarEstelas(Vector2 mov)
     {
         ActivarEstela(estelaCentral);
-        if (movimiento.x < -0.1f) ActivarEstela(estelaIzquierda);
-        else DesactivarEstela(estelaIzquierda);
-        if (movimiento.x > 0.1f) ActivarEstela(estelaDerecha);
-        else DesactivarEstela(estelaDerecha);
+        if (mov.x < -0.1f) ActivarEstela(estelaIzquierda); else DesactivarEstela(estelaIzquierda);
+        if (mov.x >  0.1f) ActivarEstela(estelaDerecha);  else DesactivarEstela(estelaDerecha);
     }
 
-    void ActivarEstela(ParticleSystem ps)
-    {
-        if (ps != null && !ps.isPlaying) ps.Play();
-    }
+    void ActivarEstela(ParticleSystem ps)   { if (ps != null && !ps.isPlaying) ps.Play(); }
+    void DesactivarEstela(ParticleSystem ps){ if (ps != null && ps.isPlaying)  ps.Stop(); }
+    void DetenerTodasLasEstelas()           { DesactivarEstela(estelaCentral); DesactivarEstela(estelaIzquierda); DesactivarEstela(estelaDerecha); }
+    #endregion
 
-    void DesactivarEstela(ParticleSystem ps)
-    {
-        if (ps != null && ps.isPlaying) ps.Stop();
-    }
-
-    void DetenerTodasLasEstelas()
-    {
-        DesactivarEstela(estelaCentral);
-        DesactivarEstela(estelaIzquierda);
-        DesactivarEstela(estelaDerecha);
-    }
-
+    #region Vida y Game Over
     void ActualizarBarraVida()
     {
         if (barraVida != null)
@@ -198,12 +187,26 @@ public class MovimientoJugador : MonoBehaviour
 
     public void RecibirDanio(int cantidad)
     {
-        vidaActual -= cantidad;
-        vidaActual = Mathf.Clamp(vidaActual, 0, vidaMaxima);
+        vidaActual = Mathf.Clamp(vidaActual - cantidad, 0, vidaMaxima);
         ActualizarBarraVida();
-        if (vidaActual <= 0) Debug.Log("¡Jugador destruido!");
+        if (vidaActual <= 0)
+            Morir();
     }
 
+    void Morir()
+    {
+        Debug.Log("¡Jugador destruido!");
+        if (gameOverUI != null)
+            gameOverUI.ShowGameOver();
+
+        // Si quieres puedes desactivar tu script de movimiento:
+        // enabled = false;
+    }
+    #endregion
+
+    /// <summary>
+    /// Útil para sliders u otros controles que manden un float
+    /// </summary>
     public void AplicarEntradaManual(float movimientoX)
     {
         entradaMovimiento.x = Mathf.Clamp(movimientoX / velocidadGiroTimon, -1f, 1f);
