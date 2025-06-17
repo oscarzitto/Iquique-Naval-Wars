@@ -10,7 +10,7 @@ public class MovimientoJugador : MonoBehaviour
     public bool usarJoystick = true;
 
     [Header("Movimiento y Animación")]
-    public float velocidad = 5f;
+    public float velocidad = 3f;
     public bool ConFisicas = false;
     public Rigidbody2D rb;
     public Animator animator;
