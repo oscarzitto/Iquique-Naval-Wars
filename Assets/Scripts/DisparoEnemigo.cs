@@ -1,37 +1,61 @@
 using UnityEngine;
+using System.Collections;
 
 public class DisparoEnemigo : MonoBehaviour
 {
-    public GameObject estelaPrefab;        // arrastra el prefab de la estela
-    public GameObject proyectilPrefab;     // el prefab de la bala del enemigo
-    public float tiempoAdvertencia = 1f;   // cu�nto tiempo se muestra la estela antes del disparo
-    public float tiempoEntreDisparos = 3f; // espera entre cada disparo
-    public Transform puntoDisparo;         // puede ser el mismo enemigo o un hijo donde aparece el disparo
+    public GameObject estelaPrefab;         // Arrastra el prefab de la estela
+    public GameObject proyectilPrefab;      // El prefab de la bala del enemigo
+    public float tiempoAdvertencia = 1f;      // Tiempo que se muestra la estela antes del disparo
+    public float tiempoEntreDisparos = 3f;    // Tiempo inicial entre cada disparo
+    public Transform puntoDisparo;          // Punto desde el cual se disparan la estela y el proyectil
+
+    // Valores para el decremento del tiempoEntreDisparos
+    private float tiempoMinimoEntreDisparos = 1f;
+    private float decrementoPorIntervalo = 0.5f;
 
     private void Start()
     {
-        InvokeRepeating(nameof(PrepararDisparo), 2f, tiempoEntreDisparos); // dispara cada cierto tiempo
+        // Iniciamos dos coroutines: una para gestionar la secuencia de disparos y otra para actualizar el intervalo
+        StartCoroutine(DisparoLoop());
+        StartCoroutine(ActualizarTiempoEntreDisparos());
     }
 
-    void PrepararDisparo()
+    IEnumerator DisparoLoop()
     {
-        StartCoroutine(AdvertenciaYDisparo());
+        // Delay inicial, ajustable según convenga
+        yield return new WaitForSeconds(2f);
+        while (true)
+        {
+            // Ejecuta la secuencia de advertencia y disparo
+            yield return StartCoroutine(AdvertenciaYDisparo());
+            // Espera según el intervalo actual (que se actualiza dinámicamente)
+            yield return new WaitForSeconds(tiempoEntreDisparos);
+        }
     }
 
-    System.Collections.IEnumerator AdvertenciaYDisparo()
+    IEnumerator AdvertenciaYDisparo()
     {
-        // Mostrar la estela visual
+        // Instanciamos la estela visual para avisar del disparo
         GameObject estela = Instantiate(estelaPrefab, puntoDisparo.position, Quaternion.identity);
-        // Hacer que la estela siga al punto de disparo
+        // La estela sigue al punto de disparo
         estela.transform.SetParent(puntoDisparo);
 
+        // Esperamos el tiempo de advertencia
         yield return new WaitForSeconds(tiempoAdvertencia);
 
-        // Desaparecer la estela
+        // Destruimos la estela y disparamos el proyectil
         Destroy(estela);
-
-        // Disparar el proyectil
         Instantiate(proyectilPrefab, puntoDisparo.position, Quaternion.identity);
     }
-}
 
+    IEnumerator ActualizarTiempoEntreDisparos()
+    {
+        // Cada 20 segundos reducimos el tiempoEntreDisparos en 0.5, hasta un mínimo de 1 segundo.
+        while (tiempoEntreDisparos > tiempoMinimoEntreDisparos)
+        {
+            yield return new WaitForSeconds(20f);  // Aquí se cambia de 30 a 20 segundos
+            tiempoEntreDisparos = Mathf.Max(tiempoMinimoEntreDisparos, tiempoEntreDisparos - decrementoPorIntervalo);
+            Debug.Log("Nuevo intervalo entre disparos: " + tiempoEntreDisparos);
+        }
+    }
+}
