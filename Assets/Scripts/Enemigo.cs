@@ -52,6 +52,9 @@ public class Enemigo : MonoBehaviour
             Debug.Log("¡Enemigo destruido!");
             // Mostrar pantalla de victoria
             FindObjectOfType<VictoriaUI>()?.ShowVictoria();
+            PlayerPrefs.SetInt("UltimoPuntaje", FindObjectOfType<SistemaDePuntos>().puntos);
+            PlayerPrefs.Save();
+
 
             // Desactivar al enemigo
             gameObject.SetActive(false);

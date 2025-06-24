@@ -167,6 +167,9 @@ public class MovimientoJugador : MonoBehaviour
 
         PlayerPrefs.Save();
         Debug.Log($"[SAVE] Jugador: {transform.position} | Vida: {vidaActual} | Puntos: {sistemaDePuntos?.puntos}");
+        PlayerPrefs.SetInt("UltimoPuntaje", FindObjectOfType<SistemaDePuntos>().puntos);
+        PlayerPrefs.Save();
+
     }
 
     public void CargarDatos()
@@ -248,6 +251,11 @@ public class MovimientoJugador : MonoBehaviour
         Debug.Log("¡Jugador destruido!");
         if (gameOverUI != null)
             gameOverUI.ShowGameOver();
+        PlayerPrefs.SetInt("UltimoPuntaje", FindObjectOfType<SistemaDePuntos>().puntos);
+        PlayerPrefs.Save();
+        // Desactivar
+        gameObject.SetActive(false);
+
 
         // Si quieres puedes desactivar tu script de movimiento:
         // enabled = false;
