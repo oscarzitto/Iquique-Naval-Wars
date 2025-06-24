@@ -77,6 +77,11 @@ public class ControladorDePausa : MonoBehaviour
         PlayerPrefs.DeleteKey("PosicionX");
         PlayerPrefs.DeleteKey("PosicionY");
         PlayerPrefs.DeleteKey("PosicionZ");
+        PlayerPrefs.DeleteKey("EnemigoX");
+        PlayerPrefs.DeleteKey("EnemigoY");
+        PlayerPrefs.DeleteKey("EnemigoZ");
+        PlayerPrefs.DeleteKey("PuntajeActual");
+
         PlayerPrefs.Save();
 
         // (Opcional) Si tienes un método ResetData en tu DataManager:

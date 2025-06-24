@@ -4,9 +4,19 @@ using UnityEngine.UI;
 
 public class Enemigo : MonoBehaviour
 {
-    public Slider barraVida; // Asigna el Slider vidaPeru
+    public Slider barraVida;
     public int vidaMaxima = 100;
     private int vidaActual;
+
+    public int VidaActual
+    {
+        get => vidaActual;
+        set
+        {
+            vidaActual = Mathf.Clamp(value, 0, vidaMaxima);
+            ActualizarBarraVida();
+        }
+    }
 
     void Start()
     {

@@ -40,6 +40,9 @@ public class MovimientoJugador : MonoBehaviour
     private Vector2 entradaMovimiento;
     private ControlesJugador controles;
 
+    public GameObject enemigo; // ← arrástralo en el Inspector
+    public SistemaDePuntos sistemaDePuntos; // ← arrástralo en el Inspector
+
     void Awake()
     {
         controles = new ControlesJugador();
@@ -139,8 +142,31 @@ public class MovimientoJugador : MonoBehaviour
         PlayerPrefs.SetFloat("PosicionX", transform.position.x);
         PlayerPrefs.SetFloat("PosicionY", transform.position.y);
         PlayerPrefs.SetFloat("PosicionZ", transform.position.z);
+
+        // 🔴 Guardar posición del enemigo
+        if (enemigo != null)
+        {
+            PlayerPrefs.SetFloat("EnemigoX", enemigo.transform.position.x);
+            PlayerPrefs.SetFloat("EnemigoY", enemigo.transform.position.y);
+            PlayerPrefs.SetFloat("EnemigoZ", enemigo.transform.position.z);
+        }
+
+        // Guardar vida del enemigo
+        if (enemigo != null)
+        {
+            Enemigo enemigoScript = enemigo.GetComponent<Enemigo>();
+            if (enemigoScript != null)
+                PlayerPrefs.SetInt("VidaEnemigo", enemigoScript.VidaActual);
+        }
+
+        // 🔴 Guardar puntaje actual
+        if (sistemaDePuntos != null)
+        {
+            PlayerPrefs.SetInt("PuntajeActual", sistemaDePuntos.puntos);
+        }
+
         PlayerPrefs.Save();
-        Debug.Log($"[SAVE] Posición: {transform.position} | Vida: {vidaActual}");
+        Debug.Log($"[SAVE] Jugador: {transform.position} | Vida: {vidaActual} | Puntos: {sistemaDePuntos?.puntos}");
     }
 
     public void CargarDatos()
@@ -155,7 +181,31 @@ public class MovimientoJugador : MonoBehaviour
             float z = PlayerPrefs.GetFloat("PosicionZ");
             transform.position = new Vector3(x, y, z);
 
-            Debug.Log($"[LOAD] Posición: {transform.position} | Vida: {vidaActual}");
+            // 🔴 Cargar posición del enemigo
+            if (enemigo != null && PlayerPrefs.HasKey("EnemigoX"))
+            {
+                float ex = PlayerPrefs.GetFloat("EnemigoX");
+                float ey = PlayerPrefs.GetFloat("EnemigoY");
+                float ez = PlayerPrefs.GetFloat("EnemigoZ");
+                enemigo.transform.position = new Vector3(ex, ey, ez);
+            }
+
+            // Cargar vida del enemigo
+            if (enemigo != null && PlayerPrefs.HasKey("VidaEnemigo"))
+            {
+                Enemigo enemigoScript = enemigo.GetComponent<Enemigo>();
+                if (enemigoScript != null)
+                    enemigoScript.VidaActual = PlayerPrefs.GetInt("VidaEnemigo");
+            }
+
+            // 🔴 Cargar puntos
+            if (sistemaDePuntos != null && PlayerPrefs.HasKey("PuntajeActual"))
+            {
+                sistemaDePuntos.puntos = PlayerPrefs.GetInt("PuntajeActual");
+                sistemaDePuntos.SendMessage("ActualizarTexto"); // o sistemaDePuntos.ActualizarTexto() si lo haces público
+            }
+
+            Debug.Log($"[LOAD] Posición: {transform.position} | Vida: {vidaActual} | Puntos: {sistemaDePuntos?.puntos}");
         }
         else
         {
