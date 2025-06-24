@@ -2584,7 +2584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -230, y: 301}
+  m_AnchoredPosition: {x: -100, y: -541.09}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1835504927
@@ -2729,10 +2729,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1771714191}
-  menuMusic: {fileID: 8300000, guid: 4df551dbf408db94c9138bda01e9effd, type: 3}
-  opcionesMusic: {fileID: 8300000, guid: ba5a64f27dc358f4c88a0d4e55f04477, type: 3}
-  creditosMusic: {fileID: 8300000, guid: 4df551dbf408db94c9138bda01e9effd, type: 3}
-  gameplayMusic: {fileID: 0}
+  menuMusic: {fileID: 8300000, guid: f41923208f2af7745882f371abe559a8, type: 3}
+  opcionesMusic: {fileID: 8300000, guid: f41923208f2af7745882f371abe559a8, type: 3}
+  creditosMusic: {fileID: 8300000, guid: f41923208f2af7745882f371abe559a8, type: 3}
+  gameplayMusic: {fileID: 8300000, guid: f41923208f2af7745882f371abe559a8, type: 3}
 --- !u!4 &1881150744
 Transform:
   m_ObjectHideFlags: 0
