@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3418139183077956623}
   m_Layer: 0
   m_Name: bolaCanonJugador2
-  m_TagString: Untagged
+  m_TagString: DisparoJugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,9 +125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a29e1462e2b7de45b9b638e8fe5774d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 10
+  velocidad: 8
   danio: 20
   tiempoVida: 5
+  efectoChoquePrefab: {fileID: 4213022103233859309, guid: 2477aa2e9b9a1a942942a0b9e4544357, type: 3}
+  explosionEnBarcoPrefab: {fileID: 1291528131314223970, guid: e990e8eb01f298a4297baf095f6a618e, type: 3}
 --- !u!50 &4831486405138642237
 Rigidbody2D:
   serializedVersion: 5

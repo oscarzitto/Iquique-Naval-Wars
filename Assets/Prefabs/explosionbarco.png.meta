@@ -1,0 +1,1120 @@
+fileFormatVersion: 2
+guid: bf5b371b8d77588438d092caa2e53e35
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6537441741652453939
+    second: explosionbarco_0
+  - first:
+      213: -3672223776604780375
+    second: explosionbarco_1
+  - first:
+      213: -397641026327722162
+    second: explosionbarco_2
+  - first:
+      213: 3083183956440761151
+    second: explosionbarco_3
+  - first:
+      213: -8467727154725304316
+    second: explosionbarco_4
+  - first:
+      213: 6551383231511186147
+    second: explosionbarco_5
+  - first:
+      213: -3653132173673917312
+    second: explosionbarco_6
+  - first:
+      213: 2301926373837372725
+    second: explosionbarco_7
+  - first:
+      213: -6041900542863650097
+    second: explosionbarco_8
+  - first:
+      213: -2662622217441706423
+    second: explosionbarco_9
+  - first:
+      213: -6364043568130865741
+    second: explosionbarco_10
+  - first:
+      213: -5234224056008044148
+    second: explosionbarco_11
+  - first:
+      213: 7971591855263254000
+    second: explosionbarco_12
+  - first:
+      213: 6828362632818476642
+    second: explosionbarco_13
+  - first:
+      213: -4360241520117866848
+    second: explosionbarco_14
+  - first:
+      213: 5397775025114608410
+    second: explosionbarco_15
+  - first:
+      213: -4013250557222312443
+    second: explosionbarco_16
+  - first:
+      213: 2714071657163509455
+    second: explosionbarco_17
+  - first:
+      213: 5885345162096148285
+    second: explosionbarco_18
+  - first:
+      213: -2074429694445567716
+    second: explosionbarco_19
+  - first:
+      213: -7962643036667326422
+    second: explosionbarco_20
+  - first:
+      213: -1468664310744683038
+    second: explosionbarco_21
+  - first:
+      213: -6844406910110030251
+    second: explosionbarco_22
+  - first:
+      213: -1594284523046171909
+    second: explosionbarco_23
+  - first:
+      213: 1950921067301007933
+    second: explosionbarco_24
+  - first:
+      213: 5794152310427738937
+    second: explosionbarco_25
+  - first:
+      213: -3883652524110587885
+    second: explosionbarco_26
+  - first:
+      213: 4644326081571911344
+    second: explosionbarco_27
+  - first:
+      213: -8974279527690143682
+    second: explosionbarco_28
+  - first:
+      213: 8221435496282545211
+    second: explosionbarco_29
+  - first:
+      213: 5904983930684968551
+    second: explosionbarco_30
+  - first:
+      213: 2164419367482345319
+    second: explosionbarco_31
+  - first:
+      213: 1948732692244452692
+    second: explosionbarco_32
+  - first:
+      213: -2630420295588709250
+    second: explosionbarco_33
+  - first:
+      213: 8251291675619053097
+    second: explosionbarco_34
+  - first:
+      213: -178743564393827471
+    second: explosionbarco_35
+  - first:
+      213: -8130199750891116230
+    second: explosionbarco_36
+  - first:
+      213: -3929258977878062221
+    second: explosionbarco_37
+  - first:
+      213: -1488116819202123228
+    second: explosionbarco_38
+  - first:
+      213: -6260394772416503693
+    second: explosionbarco_39
+  - first:
+      213: 5883957377111713618
+    second: explosionbarco_40
+  - first:
+      213: 5746171346479099883
+    second: explosionbarco_41
+  - first:
+      213: -3202615953100033847
+    second: explosionbarco_42
+  - first:
+      213: -696367804527199202
+    second: explosionbarco_43
+  - first:
+      213: 3637290187107313405
+    second: explosionbarco_44
+  - first:
+      213: 5303420335116989102
+    second: explosionbarco_45
+  - first:
+      213: 7713612941976176669
+    second: explosionbarco_46
+  - first:
+      213: 3044660070229448746
+    second: explosionbarco_47
+  - first:
+      213: -7382313160063106720
+    second: explosionbarco_48
+  - first:
+      213: 6974557100700280592
+    second: explosionbarco_49
+  - first:
+      213: 5412427650613811278
+    second: explosionbarco_50
+  - first:
+      213: 2889158318360654876
+    second: explosionbarco_51
+  - first:
+      213: 187291174844211736
+    second: explosionbarco_52
+  - first:
+      213: -3400207942395484575
+    second: explosionbarco_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: explosionbarco_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 513
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a610f80a8a9ba50800000000000000
+      internalID: 6537441741652453939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_1
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 510
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a88ab37ee3a90dc0800000000000000
+      internalID: -3672223776604780375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_2
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 506
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e474d95e79b4b7af0800000000000000
+      internalID: -397641026327722162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_3
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 503
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33c5d4197ba9ca20800000000000000
+      internalID: 3083183956440761151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_4
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 500
+        width: 74
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4084ba744079c7a80800000000000000
+      internalID: -8467727154725304316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_5
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 498
+        width: 79
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eaccad96503bea50800000000000000
+      internalID: 6551383231511186147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 396
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0849d96a4a77d4dc0800000000000000
+      internalID: -3653132173673917312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_7
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 394
+        width: 87
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53dfda347d512ff10800000000000000
+      internalID: 2301926373837372725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_8
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 393
+        width: 89
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc25f56b77bd62ca0800000000000000
+      internalID: -6041900542863650097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_10
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 391
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5437ac7106ea7a0800000000000000
+      internalID: -6364043568130865741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_12
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 390
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f50d5b9e88c0ae60800000000000000
+      internalID: 7971591855263254000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_14
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 390
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae1772607f4d73c0800000000000000
+      internalID: -4360241520117866848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 341
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506202e91e11e48c0800000000000000
+      internalID: -4013250557222312443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_17
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 289
+        width: 94
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcecf2cdac15aa520800000000000000
+      internalID: 2714071657163509455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_20
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 288
+        width: 95
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20d43698520f7190800000000000000
+      internalID: -7962643036667326422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_21
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 341
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ede4c737914e9be0800000000000000
+      internalID: -1468664310744683038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_22
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 289
+        width: 97
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556a9a0bd28c301a0800000000000000
+      internalID: -6844406910110030251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_23
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 288
+        width: 99
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa0ee45ca6ffd9e0800000000000000
+      internalID: -1594284523046171909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_24
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 288
+        width: 99
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d327d41df50131b10800000000000000
+      internalID: 1950921067301007933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_25
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 287
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933ed8dd3d6f86050800000000000000
+      internalID: 5794152310427738937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 182
+        width: 101
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38f7fc3154f47380800000000000000
+      internalID: -8974279527690143682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_29
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 183
+        width: 101
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c55bb5608681270800000000000000
+      internalID: 8221435496282545211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_30
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 184
+        width: 101
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e0ed85997b2f150800000000000000
+      internalID: 5904983930684968551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_32
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 187
+        width: 108
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 455db6b0f0a4b0b10800000000000000
+      internalID: 1948732692244452692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_33
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 186
+        width: 99
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7cf47f7daede7bd0800000000000000
+      internalID: -2630420295588709250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_34
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 186
+        width: 96
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e496fcf0a728270800000000000000
+      internalID: 8251291675619053097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 87
+        width: 108
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25768485f0408a150800000000000000
+      internalID: 5883957377111713618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_42
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 87
+        width: 102
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0397342c50e83d0800000000000000
+      internalID: -3202615953100033847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_43
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 94
+        width: 90
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c332adb210656f0800000000000000
+      internalID: -696367804527199202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_44
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 95
+        width: 90
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6ab8b67204a7230800000000000000
+      internalID: 3637290187107313405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_45
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 95
+        width: 90
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea23b3132b8899940800000000000000
+      internalID: 5303420335116989102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_46
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 99
+        width: 87
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18885d2a124c0b60800000000000000
+      internalID: 7713612941976176669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_50
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 71
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48965f954ecc1b40800000000000000
+      internalID: 5412427650613811278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_51
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1470c1ee2a581820800000000000000
+      internalID: 2889158318360654876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_52
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 2
+        width: 67
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812a72ac454699200800000000000000
+      internalID: 187291174844211736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosionbarco_53
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 3
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1662e0734e800d0d0800000000000000
+      internalID: -3400207942395484575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 70b41a3b35b11544cb9371ed2f078757
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      explosionbarco_0: 6537441741652453939
+      explosionbarco_1: -3672223776604780375
+      explosionbarco_10: -6364043568130865741
+      explosionbarco_12: 7971591855263254000
+      explosionbarco_14: -4360241520117866848
+      explosionbarco_16: -4013250557222312443
+      explosionbarco_17: 2714071657163509455
+      explosionbarco_2: -397641026327722162
+      explosionbarco_20: -7962643036667326422
+      explosionbarco_21: -1468664310744683038
+      explosionbarco_22: -6844406910110030251
+      explosionbarco_23: -1594284523046171909
+      explosionbarco_24: 1950921067301007933
+      explosionbarco_25: 5794152310427738937
+      explosionbarco_28: -8974279527690143682
+      explosionbarco_29: 8221435496282545211
+      explosionbarco_3: 3083183956440761151
+      explosionbarco_30: 5904983930684968551
+      explosionbarco_32: 1948732692244452692
+      explosionbarco_33: -2630420295588709250
+      explosionbarco_34: 8251291675619053097
+      explosionbarco_4: -8467727154725304316
+      explosionbarco_40: 5883957377111713618
+      explosionbarco_42: -3202615953100033847
+      explosionbarco_43: -696367804527199202
+      explosionbarco_44: 3637290187107313405
+      explosionbarco_45: 5303420335116989102
+      explosionbarco_46: 7713612941976176669
+      explosionbarco_5: 6551383231511186147
+      explosionbarco_50: 5412427650613811278
+      explosionbarco_51: 2889158318360654876
+      explosionbarco_52: 187291174844211736
+      explosionbarco_53: -3400207942395484575
+      explosionbarco_6: -3653132173673917312
+      explosionbarco_7: 2301926373837372725
+      explosionbarco_8: -6041900542863650097
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

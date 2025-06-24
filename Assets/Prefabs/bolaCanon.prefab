@@ -128,6 +128,8 @@ MonoBehaviour:
   velocidad: 5
   danio: 20
   tiempoVida: 5
+  efectoChoquePrefab: {fileID: 4213022103233859309, guid: 2477aa2e9b9a1a942942a0b9e4544357, type: 3}
+  explosionEnBarcoPrefab: {fileID: 1291528131314223970, guid: e990e8eb01f298a4297baf095f6a618e, type: 3}
 --- !u!50 &-4113941659267069955
 Rigidbody2D:
   serializedVersion: 5
