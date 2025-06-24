@@ -1319,10 +1319,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1150150824}
-  menuMusic: {fileID: 8300000, guid: ba5a64f27dc358f4c88a0d4e55f04477, type: 3}
-  opcionesMusic: {fileID: 8300000, guid: ba5a64f27dc358f4c88a0d4e55f04477, type: 3}
-  creditosMusic: {fileID: 0}
-  gameplayMusic: {fileID: 0}
+  menuMusic: {fileID: 8300000, guid: f41923208f2af7745882f371abe559a8, type: 3}
+  opcionesMusic: {fileID: 8300000, guid: f41923208f2af7745882f371abe559a8, type: 3}
+  creditosMusic: {fileID: 8300000, guid: ba5a64f27dc358f4c88a0d4e55f04477, type: 3}
+  gameplayMusic: {fileID: 8300000, guid: f41923208f2af7745882f371abe559a8, type: 3}
 --- !u!4 &1442738513
 Transform:
   m_ObjectHideFlags: 0
