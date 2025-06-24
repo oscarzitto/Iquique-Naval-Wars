@@ -3,9 +3,9 @@ using UnityEngine;
 public class EnemigoSeguidor : MonoBehaviour
 {
     public Transform jugador;             // arrastra el barco jugador desde el inspector
-    public float velocidad = 3f;          // qué tan rápido se mueve hacia el jugador
-    public float suavizado = 2f;        // qué tan lento es el seguimiento (entre 0 y 1)
-    public float distanciaMinima = 0.5f;  // para que no esté justo encima
+    public float velocidad = 3f;          // quï¿½ tan rï¿½pido se mueve hacia el jugador
+    public float suavizado = 2f;        // quï¿½ tan lento es el seguimiento (entre 0 y 1)
+    public float distanciaMinima = 0.5f;  // para que no estï¿½ justo encima
 
     private Vector3 velocidadSuavizado = Vector3.zero;
 
