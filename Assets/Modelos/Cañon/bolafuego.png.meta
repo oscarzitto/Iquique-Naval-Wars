@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bolafuego_0: 228452797324986203
+      bolafuego_1: 6691788635271733229
+      bolafuego_2: -6329588059707330386
+      bolafuego_3: 2160561071536335099
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
