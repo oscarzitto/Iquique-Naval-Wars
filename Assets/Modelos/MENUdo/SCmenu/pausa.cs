@@ -61,7 +61,6 @@ public class ControladorDePausa : MonoBehaviour
     public void VolverAlMenu()
     {
         Time.timeScale = 1f;
-        GameManager.Instance.SaveGameState();  // tu método existente
         SceneManager.LoadScene(nombreEscenaMenu, LoadSceneMode.Single);
     }
 
