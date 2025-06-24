@@ -45,8 +45,10 @@ public class Enemigo : MonoBehaviour
         vidaActual = Mathf.Clamp(vidaActual, 0, vidaMaxima);
         ActualizarBarraVida();
 
+        SistemaDePuntos puntos = FindObjectOfType<SistemaDePuntos>();
         if (vidaActual <= 0)
         {
+            puntos.SumarPuntos(300);
             Debug.Log("¡Enemigo destruido!");
             // Mostrar pantalla de victoria
             FindObjectOfType<VictoriaUI>()?.ShowVictoria();
