@@ -38,7 +38,11 @@ public class Enemigo : MonoBehaviour
         if (vidaActual <= 0)
         {
             Debug.Log("¡Enemigo destruido!");
-            // Aquí puedes destruir el enemigo o activar alguna animación
+            // Mostrar pantalla de victoria
+            FindObjectOfType<VictoriaUI>()?.ShowVictoria();
+
+            // Desactivar al enemigo
+            gameObject.SetActive(false);
         }
     }
 
@@ -48,4 +52,3 @@ public class Enemigo : MonoBehaviour
             barraVida.value = vidaActual;
     }
 }
-
